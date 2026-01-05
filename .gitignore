@@ -4,3 +4,10 @@ data/
 *.zip
 __pycache__/
 .env
+
+# Ignore raw datasets
+data/
+*.csv
+
+# Ignore large or generated JSON files
+*.json
