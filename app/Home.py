@@ -1,9 +1,28 @@
 import streamlit as st
+import sys
+import os
+
+# Allow imports from src/
+sys.path.append(
+    os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+)
+
+from src.data_loader import reset_data_cache
 
 st.set_page_config(
     page_title="Credit Card Fraud Detection",
     layout="wide"
 )
+
+# =========================
+# SIDEBAR CONTROLS (IMPORTANT)
+# =========================
+with st.sidebar:
+    st.markdown("### 🔧 System Controls")
+
+    if st.button("🔄 Reload Dashboard"):
+        reset_data_cache()
+        st.rerun()
 
 st.title("💳 Credit Card Fraud Detection System")
 
