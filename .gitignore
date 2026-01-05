@@ -1,14 +1,35 @@
+# =========================
+# DATA (DO NOT COMMIT)
+# =========================
 data/
-*.csv
-*.parquet
-*.zip
-__pycache__/
-.env
-
-# Ignore raw datasets
-data/
-*.csv
-
-# Ignore large or generated JSON files
-*.json
 credit card data/
+
+# =========================
+# MODELS / ARTIFACTS
+# =========================
+model/
+*.pkl
+*.parquet
+
+# =========================
+# PYTHON
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+
+# =========================
+# STREAMLIT
+# =========================
+.streamlit/
+
+# =========================
+# NOTEBOOKS
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# OS FILES
+# =========================
+.DS_Store
+Thumbs.db
