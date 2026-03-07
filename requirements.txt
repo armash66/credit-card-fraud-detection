@@ -4,3 +4,10 @@ scikit-learn
 joblib
 pyarrow
 streamlit
+torch
+matplotlib
+seaborn
+plotly
+shap
+transformers
+Pillow
